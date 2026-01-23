@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Perspective Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div>
+    <h1 class="brand">Perspective Guide</h1>
+    <div class="tag">your lines, perfectly aligned</div>
+  </div>
+  <div class="tag">Ad slot</div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <img src="mascot_home.svg" alt="mascot" style="width:220px">
+    </div>
+    <div class="hero-right">
+      <div class="punch"><strong>The foundation of every great drawing, simplified.</strong></div>
+      <div class="hero-sub">Place vanishing points anywhere — on-canvas or far outside. Export PNG/JPEG/WEBP/SVG with optional transparent background.</div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <aside class="left-panel">
+    <div class="controls">
+      <label>Paper preset
+        <select id="preset">
+          <option>A4</option><option>A3</option><option>A2</option><option>A1</option><option value="custom">Custom</option>
+        </select>
+      </label>
+      <label>Export layers
+        <select id="exportLayers">
+          <option value="both" selected>Both (grid + perspective)</option>
+          <option value="grid">Grid only</option>
+          <option value="perspective">Perspective only</option>
+        </select>
+      </label>
+      <label>Canvas ratio
+        <select id="ratio">
+          <option value="1320x960" selected>Default</option>
+          <option value="1:1">1:1</option>
+          <option value="16:9">16:9</option>
+          <option value="1:2">1:2</option>
+          <option value="4:3">4:3</option>
+        </select>
+      </label>
+      <label>DPI (export)<input id="dpi" type="number" value="300"></label>
+      <label>Vanishing points
+        <div class="vp-buttons">
+          <button class="vp-btn active" data-vp="1">1</button>
+          <button class="vp-btn" data-vp="2">2</button>
+          <button class="vp-btn" data-vp="3">3</button>
+          <button class="vp-btn" data-vp="4">4</button>
+        </div>
+      </label>
+      <label>Lines (total)<input id="linesCount" type="number" min="4" max="360" value="30"></label>
+      <label>Stroke <input id="stroke" type="range" min="0.5" max="8" step="0.5" value="1.5"></label>
+      <label>Color <input id="color" type="color" value="#1e88a8"></label>
+      <label>Canvas color <input id="canvasColor" type="color" value="#ffffff"></label>
+      <label>Opacity <input id="opacity" type="range" min="0" max="1" step="0.01" value="0.8"></label>
+      <label><input type="checkbox" id="curveToggle" checked> Use curved grid when 4-point selected</label>
+      <label>Format
+        <select id="format">
+          <option value="png">PNG</option>
+          <option value="jpeg">JPEG</option>
+          <option value="webp">WEBP</option>
+        </select>
+      </label>
+      <div style="display:flex;gap:8px;margin-top:8px">
+      <hr style="margin:10px 0;">
+      <div class="grid-controls">
+        <label style="display:block;margin-bottom:6px;"><input type="checkbox" id="showPerspective" checked> Show perspective lines</label>
+        <label style="display:block;margin-bottom:6px;"><input type="checkbox" id="showGrid" checked> Show orthogonal grid</label>
+        <label style="display:block;">Grid divisions X <input id="gridDivX" type="number" min="1" max="500" value="10" style="width:80px;margin-left:8px"></label>
+        <label style="display:block;">Grid divisions Y <input id="gridDivY" type="number" min="1" max="500" value="10" style="width:80px;margin-left:8px"></label>
+        <label style="display:block;">Grid color <input id="gridColor" type="color" value="#cccccc" style="margin-left:8px"></label>
+        <label style="display:block;">Grid opacity <input id="gridOpacity" type="range" min="0" max="1" step="0.01" value="0.6" style="vertical-align:middle;margin-left:8px"></label>
+      </div>
+
+        <button id="clearPoints" class="btn danger">Clear</button>
+        <button id="exportBtn" class="btn">Export</button>
+      </div>
+      <div class="small">Click inside the wide board to place VPs. Drag to move. Right-click to delete. Scroll horizontally to place far left/right VPs.</div>
+    </div>
+  </aside>
+
+  <div class="board-wrap">
+    <div id="board" class="board" tabindex="0">
+      <div id="boardInner" class="boardInner">
+        <canvas id="drawCanvas"></canvas>
+        <svg id="overlay" class="overlay"></svg>
+      </div>
+    </div>
+    <img id="cornerMascot" src="mascot_home.svg" alt="corner mascot">
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>Perspective Guide</strong> is a fully automated, browser-based tool for generating accurate perspective grids.</p>
+    <p>All images exported from this website are <strong>copyright-free</strong> and safe for personal, educational, and commercial use.</p>
+    <p>© 2026 Perspective Guide. All rights reserved.</p>
+    <p>No uploads, no tracking, no accounts — everything runs locally in your browser.</p>
+  </div>
+</footer>
+
+</body>
+</html>
