@@ -58,3 +58,31 @@
   width:100%;
   padding:14px 20px;
 }
+.seo-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  margin-top: 60px;
+  border-top: 1px solid #eaeaea;
+}
+
+.seo-container {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #333;
+}
+
+.seo-container h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.seo-container h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.seo-container ul {
+  padding-left: 20px;
+}
