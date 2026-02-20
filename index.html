@@ -1,50 +1,86 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Free Perspective Grid Tool – 1, 2 & 4 Point Drawing Guide</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Free Perspective Grid Tool – 1, 2, 3 & 4 Point Drawing Guide | Perspective Guide</title>
 
-<meta name="description" content="Free online perspective grid tool for artists and students. Learn 1-point, 2-point and 4-point perspective with interactive guides and downloadable practice sheets.">
+  <!-- Primary meta -->
+  <meta name="description" content="Free online perspective grid generator for artists and students. Create 1, 2, 3 and 4 point perspective guides, export high-resolution PNG/JPEG/WEBP, and download printable grids.">
+  <meta name="keywords" content="perspective grid tool, 1 point perspective, 2 point perspective, 3 point perspective, 4 point perspective, drawing grid, printable perspective">
+  <link rel="canonical" href="https://prespectiveguide.site/">
 
-<meta name="keywords" content="perspective grid tool, 1 point perspective, 2 point perspective, 4 point perspective, drawing grid, perspective drawing guide">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Perspective Grid Tool – Perspective Guide">
+  <meta property="og:description" content="Interactive perspective grid tool + step-by-step guides and printable grids. Perfect for students, illustrators and architects.">
+  <meta property="og:url" content="https://prespectiveguide.site/">
+  <meta property="og:image" content="https://prespectiveguide.site/assets/android-chrome-512.png">
+  <meta property="og:site_name" content="Perspective Guide">
 
-<meta property="og:title" content="Free Perspective Grid Tool">
-<meta property="og:description" content="Interactive perspective grid tool + step-by-step drawing guides.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://prespectiveguide.site/">
-<meta name="description" content="Free online perspective grid generator for artists. Create 1, 2, 3 and 4 point perspective guides instantly and export high-resolution images.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Perspective Guide — Free Perspective Grid Tool">
+  <meta name="twitter:description" content="Create precise perspective grids online (1,2,3,4-point). Export high-res images and download printable practice sheets.">
+  <meta name="twitter:image" content="https://prespectiveguide.site/assets/android-chrome-512.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Organization",
- "name": "Perspective Guide",
- "url": "https://prespectiveguide.site/",
- "logo": "https://prespectiveguide.site/assets/android-chrome-512.png"
-}
-</script>
+  <!-- Favicon + PWA manifest -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#9AC7D9">
+
+  <!-- Fonts & performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Structured data (site-level & app) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Perspective Grid Tool",
-  "url": "https://prespectiveguide.site/",
-  "description": "Interactive tool for generating 1, 2 and 4 point perspective grids.",
-  "applicationCategory": "DesignApplication",
-  "operatingSystem": "All"
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "url": "https://prespectiveguide.site/",
+        "name": "Perspective Guide",
+        "description": "Free online perspective grid generator and learning resource for artists and students.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://prespectiveguide.site/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Perspective Grid Tool",
+        "url": "https://prespectiveguide.site/",
+        "description": "Interactive tool for generating 1, 2, 3 and 4 point perspective grids.",
+        "applicationCategory": "DesignApplication",
+        "operatingSystem": "All"
+      }
+    ]
+  }
+  </script>
 
+  <!-- Google AdSense (keep only this as you already have) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6075359371077493" crossorigin="anonymous"></script>
 
-<!-- Google AdSense Script (Keep Only This For Now) -->
-<script async
-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6075359371077493"
-crossorigin="anonymous"></script>
+  <!-- Optional: Google Analytics (add your GA4 measurement id) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+  </script>
+  -->
 
 </head>
 <body>
@@ -59,7 +95,7 @@ crossorigin="anonymous"></script>
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-left">
-      <img src="mascot_home.svg" alt="Perspective Guide mascot" style="width:220px">
+      <img src="/assets/mascot_home.svg" alt="Perspective Guide mascot" style="width:220px">
     </div>
     <div class="hero-right">
       <div class="punch"><strong>The foundation of every great drawing, simplified.</strong></div>
@@ -67,6 +103,10 @@ crossorigin="anonymous"></script>
         Generate accurate 1, 2, 3 and 4 point perspective grids online.
         Export high-resolution PNG, JPEG or WEBP instantly.
       </div>
+      <p style="margin-top:12px;">
+        <a class="btn" href="#board">Start using the tool</a>
+        <a class="btn ghost" href="/downloads/grid-1point.pdf">Download 1-Point Grid (A4)</a>
+      </p>
     </div>
   </div>
 </section>
@@ -211,38 +251,86 @@ crossorigin="anonymous"></script>
     </div>
   </aside>
 
-  <div class="board-wrap">
-    <div id="board" class="board" tabindex="0">
-      <div id="boardInner" class="boardInner">
-        <canvas id="drawCanvas"></canvas>
-        <svg id="overlay" class="overlay"></svg>
-      </div>
+  <div class="board-wrap" id="board">
+    <div id="boardInner" class="boardInner">
+      <canvas id="drawCanvas"></canvas>
+      <svg id="overlay" class="overlay" aria-hidden="true"></svg>
     </div>
-    <img id="cornerMascot" src="mascot_home.svg" alt="corner mascot">
+    <img id="cornerMascot" src="/assets/mascot_home.svg" alt="corner mascot">
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="/script.js" defer></script>
 
 <footer class="site-footer">
   <div class="footer-inner">
     <p><strong>Perspective Guide</strong> – Free online perspective grid generator.</p>
     <p>
-      <a href="privacy.html">Privacy Policy</a> ·
-      <a href="terms.html">Terms of Use</a> ·
-      <a href="contact.html">Contact</a>
+      <a href="/privacy.html">Privacy Policy</a> ·
+      <a href="/terms.html">Terms of Use</a> ·
+      <a href="/contact.html">Contact</a>
     </p>
     <p>© 2026 Perspective Guide. All rights reserved.</p>
   </div>
 </footer>
+
+<!-- FAQ (visible on page) -->
+<section class="faq" aria-labelledby="faq-heading" style="max-width:900px;margin:40px auto;padding:20px;">
+  <h2 id="faq-heading">Frequently Asked Questions</h2>
+  <h3>Is the perspective tool free to use?</h3>
+  <p>Yes — the tool is completely free and you can export or download printable grids at no cost.</p>
+
+  <h3>What export formats are supported?</h3>
+  <p>Export supported: PNG, JPEG, WEBP. You can also download printable A4 grids as PDF.</p>
+
+  <h3>Can I move vanishing points off-canvas?</h3>
+  <p>Yes — you can drag vanishing points off the canvas to simulate off-screen vanishing points for more complex compositions.</p>
+</section>
+
+<!-- Organization JSON-LD for Google logo recognition -->
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "Organization",
- "name": "Perspective Guide",
- "url": "https://prespectiveguide.site/",
- "logo": "https://prespectiveguide.site/assets/android-chrome-512.png"
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Perspective Guide",
+  "url": "https://prespectiveguide.site/",
+  "logo": "https://prespectiveguide.site/assets/android-chrome-512.png"
 }
 </script>
+
+<!-- FAQPage JSON-LD to help SERP snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the perspective tool free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — the tool is completely free and you can export or download printable grids at no cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What export formats are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Export supported: PNG, JPEG, WEBP. You can also download printable A4 grids as PDF."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I move vanishing points off-canvas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — you can drag vanishing points off the canvas to simulate off-screen vanishing points for more complex compositions."
+      }
+    }
+  ]
+}
+</script>
+
 </body>
 </html>
