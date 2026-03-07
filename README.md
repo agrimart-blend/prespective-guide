@@ -14,7 +14,7 @@ No login.
 No ads.  
 
 ## Live version
-Coming soon.
+https://prespectiveguide.site/
 
 ---
 
